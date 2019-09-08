@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.2cce8147.chunk.css",
-    "main.js": "/static/js/main.cc93299e.chunk.js",
-    "main.js.map": "/static/js/main.cc93299e.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.34813451.js",
-    "runtime~main.js.map": "/static/js/runtime~main.34813451.js.map",
-    "static/js/2.3ba83f40.chunk.js": "/static/js/2.3ba83f40.chunk.js",
-    "static/js/2.3ba83f40.chunk.js.map": "/static/js/2.3ba83f40.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.bacb8b2387957475f3e362c15f9b95b1.js": "/precache-manifest.bacb8b2387957475f3e362c15f9b95b1.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/static/css/main.2cce8147.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/welalafamily/static/css/main.2cce8147.chunk.css",
+    "main.js": "/welalafamily/static/js/main.e3be7121.chunk.js",
+    "main.js.map": "/welalafamily/static/js/main.e3be7121.chunk.js.map",
+    "runtime~main.js": "/welalafamily/static/js/runtime~main.658b5325.js",
+    "runtime~main.js.map": "/welalafamily/static/js/runtime~main.658b5325.js.map",
+    "static/js/2.3ba83f40.chunk.js": "/welalafamily/static/js/2.3ba83f40.chunk.js",
+    "static/js/2.3ba83f40.chunk.js.map": "/welalafamily/static/js/2.3ba83f40.chunk.js.map",
+    "index.html": "/welalafamily/index.html",
+    "precache-manifest.e8c4560de5d618b8ace775577ba298c6.js": "/welalafamily/precache-manifest.e8c4560de5d618b8ace775577ba298c6.js",
+    "service-worker.js": "/welalafamily/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/welalafamily/static/css/main.2cce8147.chunk.css.map",
+    "static/media/logo.svg": "/welalafamily/static/media/logo.5d5d9eef.svg"
   }
 }
