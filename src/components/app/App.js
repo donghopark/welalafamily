@@ -17,7 +17,7 @@ function App() {
           <div class="padding">
             <a href="/">LaLa</a>
             <nav id="menu">
-              <a>About</a>
+              <a href="#">About</a>
             </nav>
             <div id="title-container">
               <h1>We are LaLa Family</h1>
