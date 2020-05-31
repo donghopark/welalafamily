@@ -28,7 +28,6 @@ function App() {
       <section class="light">
         <div class="content-container">
           <h2>ABOUT LALA FAMILY</h2>
-          <p>We are Korean.</p>
         </div>
       </section>
       <footer>
