@@ -3,11 +3,10 @@ import React, { Component } from 'react';
 import { AppBar, Toolbar, IconButton, Button, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-
 import HideOnScroll from '../hideOnScrool'
 
 import baseStyles from '../../style';
-
+import StyledLink from '../styledLink';
 const styles = (theme) => ({
   ...baseStyles,
   title: {
@@ -23,16 +22,21 @@ class Header extends Component {
         <AppBar color="transparent" elevation={0}>
           <Toolbar>
             <IconButton edge="start" color="inherit" aria-label="menu">
-              <MenuIcon />
+              <StyledLink to={'/'} >
+                <MenuIcon />
+              </StyledLink>
             </IconButton>
             <Typography variant="h6" className={classes.title} noWrap>
-              LaLa Family
-                </Typography>
-            <Button>Destinations</Button>
-            <Button>Shop</Button>
-            <Button>Friends Club</Button>
-            <Button>About</Button>
-            <Button>Contact</Button>
+              <StyledLink to={'/'} >
+                LaLa Family
+              </StyledLink>
+            </Typography>
+            <StyledLink to={'/destinations'} >
+              <Button>Destinations</Button>
+            </StyledLink>
+            <StyledLink to={'/about'} >
+              <Button>About</Button>
+            </StyledLink>
           </Toolbar>
         </AppBar>
       </HideOnScroll>

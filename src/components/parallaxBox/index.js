@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import { Box, Button, Typography, Grid } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
@@ -13,11 +13,13 @@ const styles = (theme) => ({
     width: '100%'
   },
   description: {
-    color: 'white'
+    color: 'white',
+    textTransform: 'uppercase',
   },
   heading: {
     fontWeight: 'bold',
     color: 'white',
+    textTransform: 'uppercase',
     [theme.breakpoints.down('sm')]: {
       fontSize: 'xx-large'
     },
@@ -27,8 +29,8 @@ const styles = (theme) => ({
 
 class ParallaxBox extends Component {
   render() {
-    const { classes, useVideo, imageUrl, height = useVideo ? '100vh' : '80vh', heading, description, buttonText, buttonUrl } = this.props;
-
+    const { classes, useVideo, imageUrl, fullScreen = false, heading, description, buttonText, buttonUrl } = this.props;
+    const height = fullScreen ? '100vh' : '80vh';
     return (
 
       <Parallax
@@ -45,13 +47,15 @@ class ParallaxBox extends Component {
 
         <Grid container style={{ height }} alignItems="center" justify="center">
           <Box>
-            <Typography variant="h6" noWrap className={classes.description}>
+            {description ? <Typography variant="h6" noWrap className={classes.description}>
               {description}
-            </Typography>
+            </Typography> : null}
+
             <Typography variant="h1" noWrap className={classes.heading}>
               {heading}
             </Typography>
-            <Button variant="contained">{buttonText}</Button>
+            {buttonText || buttonUrl ? <Button variant="contained">{buttonText}</Button> : null}
+
           </Box>
         </Grid>
       </Parallax>
