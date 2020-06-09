@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
 import './index.scss';
-import { AppBar, Toolbar, IconButton, Button, Typography, CssBaseline, Grid } from '@material-ui/core';
+import { AppBar, Toolbar, Box, IconButton, Button, Typography, CssBaseline, Grid } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { SocialIcon } from 'react-social-icons';
 import HideOnScroll from '../hideOnScrool'
@@ -13,7 +13,7 @@ function App() {
       <HideOnScroll >
         <AppBar color="transparent" elevation='0'>
           <Toolbar>
-            <IconButton edge="end" color="inherit" aria-label="menu">
+            <IconButton edge="start" color="inherit" aria-label="menu">
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" className="title" noWrap>
@@ -25,13 +25,23 @@ function App() {
         </AppBar>
       </HideOnScroll>
 
-      <Grid elevation='0'>
+      <Box>
         <video id="background-video" muted loop autoPlay>
           <source src="background.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
+        <Box className="center">
+          <Typography variant="h6" noWrap>
+            Discover Travel
+            </Typography>
+          <Typography variant="h1" noWrap style={{ 'font-weight': 'bold' }}>
+            LaLa Family
+            </Typography>
+          <Button variant="contained">Join</Button>
+        </Box>
 
-      </Grid>
+
+      </Box>
 
       <Grid container>
         <Grid item xs={12} align="center">
