@@ -6,6 +6,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { SocialIcon } from 'react-social-icons';
 import HideOnScroll from '../hideOnScrool'
 
+import { Parallax, Background } from 'react-parallax';
+
 function App() {
   return (
     <Fragment>
@@ -53,7 +55,24 @@ function App() {
         <Grid item xs={12} align="center">
           <h2>ABOUT LALA FAMILY</h2>
           <p>We are Korean.</p>
+          <Parallax
+          blur={3}
+            bgImage={'https://boatingnz.co.nz/wp-content/uploads/2019/11/boating-nz-image-1075-underway.jpg'}
+            strength={200}
+        >
+          <Box style={{ height: '400px', paddingTop: '100px', paddingBotton: '100px' }}>
+          <Typography variant="h6" noWrap>
+            Discover Travel
+            </Typography>
+          <Typography variant="h1" noWrap style={{ 'font-weight': 'bold' }}>
+            LaLa Family
+            </Typography>
+          <Button variant="contained">Join</Button>
+        </Box>
+        </Parallax>
+          
         </Grid>
+
       </Grid>
 
       <Grid container>
@@ -76,7 +95,29 @@ function App() {
           </div>
         </Grid>
       </Grid>
+      <Grid container>
+        <Grid item xs={12} align="center">
+          <h2>ABOUT LALA FAMILY</h2>
+          <p>We are Korean.</p>
+          <Parallax
+          blur={3}
+            bgImage={'https://boatingnz.co.nz/wp-content/uploads/2019/11/boating-nz-image-1075-underway.jpg'}
+            strength={200}
+        >
+          <Box style={{ height: '400px', paddingTop: '100px', paddingBotton: '100px' }}>
+          <Typography variant="h6" noWrap>
+            Discover Travel
+            </Typography>
+          <Typography variant="h1" noWrap style={{ 'font-weight': 'bold' }}>
+            LaLa Family
+            </Typography>
+          <Button variant="contained">Join</Button>
+        </Box>
+        </Parallax>
+          
+        </Grid>
 
+      </Grid>
       <Grid container>
         <Grid item xs={12} align="center">
           <h2>FIND US ON FACEBOOK</h2>
@@ -103,7 +144,6 @@ function App() {
 
 
     </Fragment>
-
 
   );
 }
