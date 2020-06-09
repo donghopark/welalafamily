@@ -6,7 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { SocialIcon } from 'react-social-icons';
 import HideOnScroll from '../hideOnScrool'
 
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
 function App() {
   return (
