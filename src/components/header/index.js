@@ -20,7 +20,7 @@ class Header extends Component {
     const { classes } = this.props;
     return (
       <HideOnScroll >
-        <AppBar color="transparent" elevation='0'>
+        <AppBar color="transparent" elevation={0}>
           <Toolbar>
             <IconButton edge="start" color="inherit" aria-label="menu">
               <MenuIcon />

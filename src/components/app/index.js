@@ -1,17 +1,18 @@
 import React, { Component, Fragment } from 'react';
 
 // import './index.scss';
-import { Box, Button, Typography, CssBaseline, Grid } from '@material-ui/core';
+import { CssBaseline, Grid } from '@material-ui/core';
 
 
 
 
-import { Parallax } from 'react-parallax';
+
 
 import { withStyles } from '@material-ui/core/styles';
 
 import Header from '../header';
 import Footer from '../footer';
+import ParallaxBox from '../parallaxBox';
 
 import baseStyles from '../../style';
 
@@ -48,25 +49,16 @@ class App extends Component {
         <CssBaseline />
         <Header />
 
-        <Box className={classes.centerWrapper}>
-          <video className={classes.fullWidth} muted loop autoPlay>
-            <source src="background.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-          </video>
-          <Box className={classes.center}>
-            <Typography variant="h6" noWrap>
-              Discover Travel
-              </Typography>
-
-            <Typography variant="h1" className={classes.heading} noWrap>
-              LaLa Family
-              </Typography>
-
-            <Button variant="contained">Join</Button>
-          </Box>
-        </Box>
-
         <Grid container>
+          <Grid item xs={12} align="center">
+            <ParallaxBox
+              imageUrl='https://boatingnz.co.nz/wp-content/uploads/2019/11/boating-nz-image-1075-underway.jpg'
+              heading='LaLa Family'
+              description='Discover Travel And...'
+              buttonText='Join'
+              useVideo='true'
+            />
+          </Grid>
           <Grid item xs={12} align="center">
             <h1>We are LaLa Family.</h1>
             <h2>Hello Lajoon, Lael!</h2>
@@ -76,21 +68,13 @@ class App extends Component {
           <Grid item xs={12} align="center">
             <h2>ABOUT LALA FAMILY</h2>
             <p>We are Korean.</p>
-            <Parallax
-              blur={3}
-              bgImage={'https://boatingnz.co.nz/wp-content/uploads/2019/11/boating-nz-image-1075-underway.jpg'}
-              strength={200}
-            >
-              <Box style={{ height: '400px', paddingTop: '100px', paddingBotton: '100px' }}>
-                <Typography variant="h6" noWrap>
-                  Discover Travel
-              </Typography>
-                <Typography variant="h1" noWrap className={classes.heading}>
-                  LaLa Family
-              </Typography>
-                <Button variant="contained">Join</Button>
-              </Box>
-            </Parallax>
+            <ParallaxBox
+              imageUrl='https://boatingnz.co.nz/wp-content/uploads/2019/11/boating-nz-image-1075-underway.jpg'
+              heading='LaLa Family'
+              description='Discover Travel'
+              buttonText='Join'
+            />
+
 
           </Grid>
           <Grid item xs={12} align="center">
@@ -112,24 +96,12 @@ class App extends Component {
             </div>
           </Grid>
           <Grid item xs={12} align="center">
-            <h2>ABOUT LALA FAMILY</h2>
-            <p>We are Korean.</p>
-            <Parallax
-              blur={3}
-              bgImage={'https://boatingnz.co.nz/wp-content/uploads/2019/11/boating-nz-image-1075-underway.jpg'}
-              strength={200}
-            >
-              <Box style={{ height: '400px', paddingTop: '100px', paddingBotton: '100px' }}>
-                <Typography variant="h6" noWrap>
-                  Discover Travel
-              </Typography>
-                <Typography variant="h1" noWrap style={{ 'font-weight': 'bold' }}>
-                  LaLa Family
-              </Typography>
-                <Button variant="contained">Join</Button>
-              </Box>
-            </Parallax>
-
+            <ParallaxBox
+              imageUrl='https://boatingnz.co.nz/wp-content/uploads/2019/11/boating-nz-image-1075-underway.jpg'
+              heading='ABOUT LALA FAMILY'
+              description='Discover Travel And...'
+              buttonText='Join'
+            />
           </Grid>
 
           <Grid item xs={12} align="center">
